@@ -16,7 +16,10 @@ class Program
         var kuil = new Valkuil();
 
         var lus = new DetectieLus();
-
+        lus.Detect += lamp.Aan;
+        lus.Detect += came.Start;
+        lus.Detect += hek.Open;
+        lus.Detect += kuil.Open;
         
 
         lus.Detecting();
